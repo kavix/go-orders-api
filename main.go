@@ -16,7 +16,7 @@ func main() {
 	defer cancel()
 	err := app.Start(context.TODO())
 	if err != nil {
-		fmt.Println("Fail to Start %s", err)
+		fmt.Errorf("Fail to Start %w", err)
 	}
 
 }
